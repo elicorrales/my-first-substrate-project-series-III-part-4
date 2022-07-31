@@ -10,8 +10,17 @@ https://github.com/paritytech/ink
   
 # Why ```contract-cargo``` ?  
 
-Let's try to build and deploy a WASM contract without ```contract-cargo```.  
+If you went through our Series II (the Solana blockchain), remember we had to install a new cargo command to handl eBPF contract binaries.  
   
+Similarly, in order to:  
+- build the WASM binary,
+- then deploy(for Subtrate the term is ```upload```),  
+- and we will also have to ```instantiate``` an instance of the contract on the blockchain,
+- and finally we will want to ```call``` (invoke a command from our contract)
+
+then you will need ```contract-cargo```.  
+  
+
 
 ## Prep
 

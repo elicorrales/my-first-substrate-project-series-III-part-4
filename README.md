@@ -10,7 +10,7 @@ https://github.com/paritytech/ink
   
 # Why ```contract-cargo``` ?  
 
-If you went through our Series II (the Solana blockchain), remember we had to install a new cargo command to handl eBPF contract binaries.  
+If you went through our Series II (the Solana blockchain), remember we had to install a new cargo command to handle eBPF contract binaries.  
   
 Similarly, in order to:  
 - build the WASM binary,
@@ -20,7 +20,17 @@ Similarly, in order to:
 
 then you will need ```contract-cargo```.  
   
+## Install ```cargo-contract```  
 
+```
+sudo apt install -y binaryen
+```
+``` 
+cargo install cargo-dylint dylint-link
+```
+```
+cargo install --force --locked cargo-contract
+```
 
 ## Prep
 
@@ -34,4 +44,7 @@ ${HOME}/<your-path-to-a-place-to-gather-all-subtrate-stuff-plus-your-project-cod
             client.js
         my-first-smart-contract/
             <here is where we will be for now>
+
+Go to ```my-first-smart-contract``` directory and do a ```cargo contract new my_contract```.  
+  
 

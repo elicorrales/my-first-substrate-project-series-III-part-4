@@ -45,6 +45,25 @@ ${HOME}/<your-path-to-a-place-to-gather-all-subtrate-stuff-plus-your-project-cod
         my-first-smart-contract/
             <here is where we will be for now>
 
-Go to ```my-first-smart-contract``` directory and do a ```cargo contract new my_contract```.  
+Go to ```my-first-smart-contract``` directory and do a ```cargo contract new helloworld```.  
   
+Then go into the directory (```helloworld```).  
+
+```
+$ tree
+.
+├── README.md
+├── my-first-client
+│   ├── client.js
+│   └── node_modules -> /home/IamDeveloper/.nvm/versions/node/v18.6.0/lib/node_modules/
+└── my-first-smart-contract
+    └── helloworld
+        ├── Cargo.toml
+        └── lib.rs
+```
+  
+
+Do a ```cargo +nightly contract build --release```.  
+  
+
 

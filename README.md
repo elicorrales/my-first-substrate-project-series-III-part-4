@@ -65,5 +65,25 @@ $ tree
 
 Do a ```cargo +nightly contract build --release```.  
   
+A final, successful(?) output (remains to be seen since we have not yet tried to deploy(```upload```) it to the local substrate node):  
+```
+   Compiling ink_storage v3.3.0
+   Compiling ink_lang v3.3.0
+   Compiling helloworld v0.1.0 (/tmp/cargo-contract_N0AQ9k)
+   Compiling metadata-gen v0.1.0 (/tmp/cargo-contract_N0AQ9k/.ink/metadata_gen)
+    Finished release [optimized] target(s) in 1m 34s
+     Running `target/ink/release/metadata-gen ''`
+ [5/5] Generating bundle
 
+Original wasm size: 17.6K, Optimized: 0.4K
+
+The contract was built in RELEASE mode.
+
+Your contract artifacts are ready. You can find them in:
+/home/IamDeveloper/MySoftwareProjects/blockchain/rust/rust-substrate-blockchain-projects/my-first-substrate-projects/my-first-project-prep-lesson/my-first-smart-contracts/helloworld/target/ink
+
+  - helloworld.contract (code + metadata)
+  - helloworld.wasm (the contract's code)
+  - metadata.json (the contract's metadata)
+```
 
